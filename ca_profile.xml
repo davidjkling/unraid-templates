@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
-	<Icon>https://github.com/davidjkling/unraid-templates/blob/main/user_icon.png?raw=true</Icon>
+	<Icon>https://raw.githubusercontent.com/davidjkling/unraid-templates/refs/heads/main/static/user_icon.png</Icon>
 	<Profile>
 		I just want nice things for Unraid.
 	</Profile>
