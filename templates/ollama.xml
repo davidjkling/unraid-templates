@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-	<Container version="2">
+<Container version="2">
 	<Name>ollama</Name>
 	<Repository>ollama/ollama</Repository>
 	<Registry>https://hub.docker.com/r/ollama/ollama/</Registry>

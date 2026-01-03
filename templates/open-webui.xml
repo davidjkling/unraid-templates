@@ -4,7 +4,7 @@
 	<Repository>ghcr.io/open-webui/open-webui:main</Repository>
 	<Registry>https://github.com/open-webui/open-webui/pkgs/container/open-webui</Registry>
 	<Branch>
-	<Tag>main</Tag>
+		<Tag>main</Tag>
 		<TagDescription>Standard container</TagDescription>
 	</Branch>
 	<Branch>
