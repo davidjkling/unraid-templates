@@ -15,8 +15,8 @@
 	<MyIP/>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
-  <Support>https://github.com/ollama/ollama/issues</Support>
-  <Project>https://github.com/ollama/ollama</Project>
+	<Support>https://github.com/ollama/ollama/issues</Support>
+	<Project>https://github.com/ollama/ollama</Project>
 	<Overview>
 The easiest way to get up and running with large language models locally.
 
