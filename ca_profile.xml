@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Maintainer>
 	<Icon>https://raw.githubusercontent.com/davidjkling/unraid-templates/refs/heads/main/static/user_icon.png</Icon>
-	<Profile>
-		I just want nice things for Unraid.
-	</Profile>
+	<Profile>I just want nice things for Unraid.</Profile>
+	<Forum>https://forums.unraid.net/topic/196521-support-kling-templates</Forum>
 </Maintainer>
