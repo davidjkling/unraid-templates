@@ -23,7 +23,7 @@ https://docs.bunkerweb.io/latest/integrations/#all-in-one-aio-image
 
 Complete The Setup:
 https://docs.bunkerweb.io/latest/quickstart-guide/#complete-the-setup-wizard
-https://<IP>:8443]/setup
+https://your_IP:8443]/setup
 	</Overview>
 	<Category>Security: Tools: Network:Web</Category>
 	<WebUI>https://[IP]:[PORT:8443]/</WebUI>
