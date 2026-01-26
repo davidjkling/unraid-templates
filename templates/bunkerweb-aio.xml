@@ -12,14 +12,21 @@
 	<Overview>
 BunkerWeb is a next-generation, open-source Web Application Firewall (WAF).
 
+NOTE:
+After installing the container it won't start due to permissions, run the following and start it again:
+cd /mnt/user/appdata/
+chown -R root:101 bunkerweb-aio/
+chmod -R 770 bunkerweb-aio/
+
 Configuration:
 https://docs.bunkerweb.io/latest/integrations/#all-in-one-aio-image
 
-Complete Setup:
-http://[IP]:[PORT:8080]/setup
+Complete The Setup:
+https://docs.bunkerweb.io/latest/quickstart-guide/#complete-the-setup-wizard
+https://<IP>:8443]/setup
 	</Overview>
 	<Category>Security: Tools: Network:Web</Category>
-	<WebUI>http://[IP]:[PORT:8080]/</WebUI>
+	<WebUI>https://[IP]:[PORT:8443]/</WebUI>
 	<TemplateURL>https://raw.githubusercontent.com/davidjkling/unraid-templates/main/templates/bunkerweb-aio.xml</TemplateURL>
 	<Icon>https://raw.githubusercontent.com/davidjkling/unraid-templates/refs/heads/main/static/bunkerweb-aio.png</Icon>
 	<ExtraParams/>
@@ -30,6 +37,8 @@ http://[IP]:[PORT:8080]/setup
 	<Requires/>
 	<Config Name="Data" Target="/data" Default="/mnt/user/appdata/bunkerweb-aio" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bunkerweb-aio</Config>
 	<Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="Sets the port to run BunkerWeb WebUI from." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+	<Config Name="Secure WebUI Port" Target="8443" Default="8443" Mode="tcp" Description="Sets the port to run BunkerWeb WebUI from." Type="Port" Display="always" Required="true" Mask="false">8443</Config>
+	<Config Name="Secure WebUI Port" Target="8443" Default="8443" Mode="udp" Description="Sets the port to run BunkerWeb WebUI from." Type="Port" Display="always" Required="true" Mask="false">8443</Config>
 	<Config Name="SERVICE_UI" Target="SERVICE_UI" Default="yes|no" Mode="" Description="Enables the web UI service." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
 	<Config Name="SERVICE_SCHEDULER" Target="SERVICE_SCHEDULER" Default="yes|no" Mode="" Description="Enables the Scheduler service." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
 	<Config Name="SERVICE_API" Target="SERVICE_API" Default="yes|no" Mode="" Description="Enables the API service (FastAPI control plane)." Type="Variable" Display="advanced" Required="false" Mask="false">no</Config>
