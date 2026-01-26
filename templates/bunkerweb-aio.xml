@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+	<Name>bunkerweb-aio</Name>
+	<Repository>bunkerity/bunkerweb-all-in-one:latest</Repository>
+	<Registry>https://hub.docker.com/r/bunkerity/bunkerweb-all-in-one</Registry>
+	<Network>bridge</Network>
+	<MyIP/>
+	<Shell>bash</Shell>
+	<Privileged>false</Privileged>
+	<Support>https://github.com/bunkerity/bunkerweb/issues</Support>
+	<Project>https://github.com/bunkerity/bunkerweb</Project>
+	<Overview>
+BunkerWeb is a next-generation, open-source Web Application Firewall (WAF).
+
+Configuration:
+https://docs.bunkerweb.io/latest/integrations/#all-in-one-aio-image
+
+Complete Setup:
+http://[IP]:[PORT:8080]/setup
+	</Overview>
+	<Category>Security: Tools: Network:Web</Category>
+	<WebUI>http://[IP]:[PORT:8080]/</WebUI>
+	<TemplateURL>https://raw.githubusercontent.com/davidjkling/unraid-templates/main/templates/bunkerweb-aio.xml</TemplateURL>
+	<Icon>https://raw.githubusercontent.com/davidjkling/unraid-templates/refs/heads/main/static/bunkerweb-aio.png</Icon>
+	<ExtraParams/>
+	<PostArgs/>
+	<CPUset/>
+	<DonateText/>
+	<DonateLink/>
+	<Requires/>
+	<Config Name="Data" Target="/data" Default="/mnt/user/appdata/bunkerweb-aio" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bunkerweb-aio</Config>
+	<Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="Sets the port to run BunkerWeb WebUI from." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+	<Config Name="SERVICE_UI" Target="SERVICE_UI" Default="yes|no" Mode="" Description="Enables the web UI service." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
+	<Config Name="SERVICE_SCHEDULER" Target="SERVICE_SCHEDULER" Default="yes|no" Mode="" Description="Enables the Scheduler service." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
+	<Config Name="SERVICE_API" Target="SERVICE_API" Default="yes|no" Mode="" Description="Enables the API service (FastAPI control plane)." Type="Variable" Display="advanced" Required="false" Mask="false">no</Config>
+	<Config Name="AUTOCONF_MODE" Target="AUTOCONF_MODE" Default="yes|no" Mode="" Description="Enables the autoconf service." Type="Variable" Display="advanced" Required="false" Mask="false">no</Config>
+	<Config Name="USE_CROWDSEC" Target="USE_CROWDSEC" Default="yes|no" Mode="" Description="CrowdSec integration is disabled by default." Type="Variable" Display="advanced" Required="false" Mask="false">no</Config>
+	<Config Name="USE_REDIS" Target="USE_REDIS" Default="yes|no" Mode="" Description="Enables the built-in Redis instance." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
+	<Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Mode="" Description="Override REDIS_HOST only when you have an external Redis/Valkey endpoint to connect to." Type="Variable" Display="advanced" Required="false" Mask="false" />
+</Container>

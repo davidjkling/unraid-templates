@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
 	<Name>open-webui</Name>
-	<Repository>ghcr.io/open-webui/open-webui:main</Repository>
+	<Repository>ghcr.io/open-webui/open-webui</Repository>
 	<Registry>https://github.com/open-webui/open-webui/pkgs/container/open-webui</Registry>
 	<Branch>
 		<Tag>main</Tag>

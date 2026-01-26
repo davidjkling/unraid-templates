@@ -22,10 +22,12 @@ The easiest way to get up and running with large language models locally.
 
 NOTE:
 Extra Parameters needed for Nvidia:
-	-gpus=all
+	--gpus=all
+	Additionally can set CUDA_VISIBLE_DEVICES to only use specific GPU(s) for ollama
 
 Extra Parameters needed for AMD:
 	--device='/dev/kfd' --device='/dev/dri'
+	Additionally can set HIP_VISIBLE_DEVICES to only use specific GPU(s) for ollama
 	</Overview>
 	<Category>AI: Tools:</Category>
 	<WebUI>http://[IP]:[PORT:11434]/</WebUI>
