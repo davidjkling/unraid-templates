@@ -12,7 +12,6 @@
 		<TagDescription>Slim verion without built in models</TagDescription>
 	</Branch>
 	<Network>bridge</Network>
-	<MyIP/>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
 	<Support>https://github.com/open-webui/open-webui/issues</Support>

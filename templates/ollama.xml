@@ -12,7 +12,6 @@
 		<TagDescription>Use for AMD</TagDescription>
 	</Branch>
 	<Network>bridge</Network>
-	<MyIP/>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
 	<Support>https://github.com/ollama/ollama/issues</Support>

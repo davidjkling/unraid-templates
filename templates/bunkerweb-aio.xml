@@ -4,7 +4,6 @@
 	<Repository>bunkerity/bunkerweb-all-in-one:latest</Repository>
 	<Registry>https://hub.docker.com/r/bunkerity/bunkerweb-all-in-one</Registry>
 	<Network>bridge</Network>
-	<MyIP/>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
 	<Support>https://github.com/bunkerity/bunkerweb/issues</Support>
@@ -42,7 +41,7 @@ chmod -R 770 bunkerweb-aio/
 	</Requires>
 	<Config Name="Data" Target="/data" Default="/mnt/user/appdata/bunkerweb-aio" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bunkerweb-aio</Config>
 	<Config Name="HTTP" Target="8080" Default="8080" Mode="tcp" Description="Port for HTTP." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-	<Config Name="HTTPS" Target="8443" Default="8443" Mode="tcp" Description="Port for SSL." Type="Port" Display="always" Required="true" Mask="false">8443</Config>
+	<Config Name="HTTPS" Target="8443" Default="8443" Mode="tcp" Description="Port for HTTPS." Type="Port" Display="always" Required="true" Mask="false">8443</Config>
 	<Config Name="HTTP/3 (QUIC)" Target="8443" Default="8443" Mode="udp" Description="Port for QUIC." Type="Port" Display="always" Required="true" Mask="false">8443</Config>
 	<Config Name="WebUI Port without BunkerWeb in front" Target="7000" Default="7000" Mode="tcp" Description="Port to access WebUI without going through BunkerWeb." Type="Port" Display="always" Required="true" Mask="false">7000</Config>
 	<Config Name="SERVICE_UI" Target="SERVICE_UI" Default="yes|no" Mode="" Description="Enables the web UI service." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
