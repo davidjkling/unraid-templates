@@ -50,5 +50,5 @@ chmod -R 770 bunkerweb-aio/
 	<Config Name="AUTOCONF_MODE" Target="AUTOCONF_MODE" Default="yes|no" Mode="" Description="Enables the autoconf service." Type="Variable" Display="advanced" Required="false" Mask="false">no</Config>
 	<Config Name="USE_CROWDSEC" Target="USE_CROWDSEC" Default="yes|no" Mode="" Description="CrowdSec integration is disabled by default." Type="Variable" Display="advanced" Required="false" Mask="false">no</Config>
 	<Config Name="USE_REDIS" Target="USE_REDIS" Default="yes|no" Mode="" Description="Enables the built-in Redis instance." Type="Variable" Display="advanced" Required="false" Mask="false">yes</Config>
-	<Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Mode="" Description="Override REDIS_HOST only when you have an external Redis/Valkey endpoint to connect to." Type="Variable" Display="advanced" Required="false" Mask="false" />
+	<Config Name="REDIS_HOST" Target="REDIS_HOST" Default="127.0.0.1" Mode="" Description="Override REDIS_HOST only when you have an external Redis/Valkey endpoint to connect to." Type="Variable" Display="advanced" Required="false" Mask="false">127.0.0.1</Config>
 </Container>
