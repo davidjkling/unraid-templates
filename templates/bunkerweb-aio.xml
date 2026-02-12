@@ -6,7 +6,7 @@
 	<Network>bridge</Network>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
-	<Support>https://github.com/bunkerity/bunkerweb/issues</Support>
+	<Support>https://forums.unraid.net/topic/196521-support-kling-templates</Support>
 	<Project>https://github.com/bunkerity/bunkerweb</Project>
 	<Overview>
 BunkerWeb is a next-generation, open-source Web Application Firewall (WAF).
