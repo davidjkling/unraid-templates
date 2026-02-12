@@ -14,7 +14,7 @@
 	<Network>bridge</Network>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
-	<Support>https://github.com/open-webui/open-webui/issues</Support>
+	<Support>https://forums.unraid.net/topic/196521-support-kling-templates</Support>
 	<Project>https://github.com/open-webui/open-webui</Project>
 	<Overview>
 ChatGPT-Style Web Interface for various LLM runners, including Ollama and OpenAI-compatible APIs.
