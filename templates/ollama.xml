@@ -17,7 +17,7 @@
 	<Support>https://forums.unraid.net/topic/196521-support-kling-templates</Support>
 	<Project>https://github.com/ollama/ollama</Project>
 	<Overview>
-The easiest way to get up and running with large language models locally.
+Official Ollama images for Nvidia or AMD support.
 
 NOTE:
 Extra Parameters needed for Nvidia:
