@@ -14,14 +14,14 @@ BunkerWeb is a next-generation, open-source Web Application Firewall (WAF).
 Configuration:
 https://docs.bunkerweb.io/latest/integrations/#all-in-one-aio-image
 
-Complete The Setup:
+Complete the Setup:
 https://docs.bunkerweb.io/latest/quickstart-guide/#complete-the-setup-wizard
-https://your_IP_or_FQDN:8443]/setup
+https://your_IP_or_FQDN:8443/setup
 
 Login:
-https://your_IP_or_FQDN:8443]/login
+https://your_IP_or_FQDN:8443/login
 or
-http://your_IP_or_FQDN:7000]/login
+http://your_IP_or_FQDN:7000/login
 	</Overview>
 	<Category>Security: Tools: Network:Web</Category>
 	<WebUI>http://[IP]:[PORT:7000]/</WebUI>
