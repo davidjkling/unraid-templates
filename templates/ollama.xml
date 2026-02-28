@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-	<Name>ollama (Nvidia or AMD)</Name>
+	<Name>Ollama</Name>
 	<Repository>ollama/ollama</Repository>
 	<Registry>https://hub.docker.com/r/ollama/ollama/</Registry>
 	<Branch>
@@ -17,7 +17,8 @@
 	<Support>https://forums.unraid.net/topic/196521-support-kling-templates</Support>
 	<Project>https://github.com/ollama/ollama</Project>
 	<Overview>
-Official Ollama images for Nvidia or AMD support.
+Official Ollama images for Nvidia or AMD GPUs.
+Intel Arc GPUs could potentially work with Vulkan enabled.
 
 NOTE:
 Extra Parameters needed for Nvidia:
@@ -29,6 +30,8 @@ Extra Parameters needed for AMD:
 	--device='/dev/kfd' --device='/dev/dri'
 	Additionally you can add a Variable called ROCR_VISIBLE_DEVICES to only use specific AMD GPU(s) by UUID.
 	Example: GPU-67246603a11f0a21 or GPU-XXXXXXX,GPU-YYYYYYY
+
+Docs: https://docs.ollama.com/
 	</Overview>
 	<Category>AI: Tools:</Category>
 	<WebUI>http://[IP]:[PORT:11434]/</WebUI>
@@ -39,7 +42,7 @@ Extra Parameters needed for AMD:
 	<CPUset/>
 	<DonateText/>
 	<DonateLink/>
-	<Requires>**Nvidia-Driver plugin**  (nVidia Support)&amp;amp;#13;&amp;amp;#10;**Radeon-TOP plugin**  (AMD Support)</Requires>
+	<Requires>**Nvidia-Driver plugin** (nVidia Support)&amp;amp;#13;&amp;amp;#10;**Radeon-TOP plugin** (AMD Support)</Requires>
 	<Config Name="Data" Target="/root/.ollama" Default="/mnt/user/appdata/ollama" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ollama</Config>
 	<Config Name="API Interface Port" Target="11434" Default="11434" Mode="tcp" Description="Port number where ollama listens on." Type="Port" Display="always" Required="true" Mask="false">11434</Config>
 	<Config Name="OLLAMA_HOST" Target="OLLAMA_HOST" Default="127.0.0.1:11434" Mode="" Description="IP and Port the server binds to, e.g. 0.0.0.0:11434, for network access." Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1:11434</Config>
