@@ -42,11 +42,22 @@ There are a lot of missing environment options missing from the template but can
 	<Config Name="OPENAI_API_BASE_URL" Target="OPENAI_API_BASE_URL" Default="https://api.openai.com/v1" Mode="" Description="Configures the OpenAI base API URL." Type="Variable" Display="always" Required="false" Mask="false">https://api.openai.com/v1</Config>
 	<Config Name="OPENAI_API_KEY" Target="OPENAI_API_KEY" Default="" Mode="" Description="Sets the OpenAI API key, e.g. sk-124781258123." Type="Variable" Display="always" Required="false" Mask="true"/>
 	<!-- Advanced settings -->
+	<!-- Security -->
 	<Config Name="WEBUI_AUTH" Target="WEBUI_AUTH" Default="true|false" Mode="" Description="This setting enables or disables authentication." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="CORS_ALLOW_ORIGIN" Target="CORS_ALLOW_ORIGIN" Default="*" Mode="" Description="Sets the allowed origins for Cross-Origin Resource Sharing (CORS). Smicolon ';' separated list of allowed origins." Type="Variable" Display="advanced" Required="false" Mask="false">*</Config>
+	<!-- App/Backend -->
+	<Config Name="ENABLE_CHANNELS" Target="ENABLE_CHANNELS" Default="false|true" Mode="" Description="Enables or disables channel support." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="ENABLE_FOLDERS" Target="ENABLE_FOLDERS" Default="true|false" Mode="" Description="Enables or disables the folders feature, allowing users to organize their chats into folders in the sidebar." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="ENABLE_NOTES" Target="ENABLE_NOTES" Default="true|false" Mode="" Description="Enables or disables the notes feature, allowing users to create and manage personal notes within Open WebUI." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="ENABLE_MEMORIES" Target="ENABLE_MEMORIES" Default="true|false" Mode="" Description="Enables or disables the memory feature, allowing models to store and retrieve long-term information about users." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="ENABLE_ADMIN_CHAT_ACCESS" Target="ENABLE_ADMIN_CHAT_ACCESS" Default="true|false" Mode="" Description="Enables admin users to directly access the chats of other users." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="ENABLE_ADMIN_ANALYTICS" Target="ENABLE_ADMIN_ANALYTICS" Default="true|false" Mode="" Description="Controls whether the Analytics tab is visible and accessible in the admin panel." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<Config Name="ENABLE_EASTER_EGGS" Target="ENABLE_EASTER_EGGS" Default="true|false" Mode="" Description="Enables or disables easter egg features in the UI, such as special themes. Set to False to hide these optional novelty features from users." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 	<Config Name="GLOBAL_LOG_LEVEL" Target="GLOBAL_LOG_LEVEL" Default="INFO|DEBUG|WARNING|ERROR|CRITICAL" Mode="" Description="Sets the global logging level for all Open WebUI components. " Type="Variable" Display="advanced" Required="false" Mask="false"/>
 	<Config Name="ENABLE_EVALUATION_ARENA_MODELS" Target="ENABLE_EVALUATION_ARENA_MODELS" Default="true|false" Mode="" Description="Enables or disables evaluation arena models." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 	<Config Name="ENABLE_MESSAGE_RATING" Target="ENABLE_MESSAGE_RATING" Default="true|false" Mode="" Description="Enables message rating feature." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 	<Config Name="ENABLE_COMMUNITY_SHARING" Target="ENABLE_COMMUNITY_SHARING" Default="true|false" Mode="" Description="Controls whether users can share content with the Open WebUI Community and access community resources." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+	<!-- Misc -->
 	<Config Name="HTTP_PROXY" Target="HTTP_PROXY" Default="" Mode="" Description="Proxy for HTTP." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 	<Config Name="HTTPS_PROXY" Target="HTTPS_PROXY" Default="" Mode="" Description="Proxy for HTTPS." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 	<Config Name="NO_PROXY" Target="NO_PROXY" Default="" Mode="" Description="Comma-separate list of hosts/IPs that bypass the proxy." Type="Variable" Display="advanced" Required="false" Mask="false"/>
