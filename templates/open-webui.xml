@@ -34,7 +34,7 @@ There are a lot of missing environment options missing from the template but can
 	<DonateText/>
 	<DonateLink/>
 	<Requires/>
-	<Config Name="Data" Target="/app/backend/data" Default="/mnt/user/appdata/openwebui" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/openwebui</Config>
+	<Config Name="Data" Target="/app/backend/data" Default="/mnt/user/appdata/open-webui" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/open-webui</Config>
 	<Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="Sets the port to run Open WebUI from." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
 	<Config Name="ENABLE_OLLAMA_API" Target="ENABLE_OLLAMA_API" Default="true|false" Mode="" Description="Enables the use of Ollama APIs." Type="Variable" Display="always" Required="false" Mask="false"/>
 	<Config Name="OLLAMA_BASE_URL" Target="OLLAMA_BASE_URL" Default="http://localhost:11434" Mode="" Description="Configures the Ollama backend URL." Type="Variable" Display="always" Required="false" Mask="false">http://localhost:11434</Config>
