@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+	<Name>degoog</Name>
+	<Repository>ghcr.io/fccview/degoog:latest</Repository>
+	<Registry>ghcr.io/fccview/degoog</Registry>
+	<Network>bridge</Network>
+	<Shell>bash</Shell>
+	<Privileged>false</Privileged>
+	<Support>https://github.com/fccview/degoog/issues</Support>
+	<Project>https://github.com/fccview/degoog</Project>
+	<Overview>
+Search aggregator that queries multiple engines and shows results in one place.
+You can add custom search engines, bang-command plugins, and slot plugins (query-triggered panels above/below results or in the sidebar).
+The dream would be to eventually have a user made marketplace for plugins/engines.
+
+Still in beta. Not intended for production use yet.
+	</Overview>
+    <Beta>True</Beta>
+	<Category>Tools: Network:Web</Category>
+	<WebUI>http://[IP]:[PORT:4444]/</WebUI>
+	<TemplateURL>https://raw.githubusercontent.com/davidjkling/unraid-templates/main/templates/degoog.xml</TemplateURL>
+	<Icon>https://raw.githubusercontent.com/davidjkling/unraid-templates/refs/heads/main/static/degoog.png</Icon>
+	<ExtraParams/>
+	<PostArgs/>
+	<CPUset/>
+	<DonateText/>
+	<DonateLink/>
+	<Requires/>
+    <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/degoog" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/degoog</Config>
+	<Config Name="WebUI Port" Target="4444" Default="4444" Mode="tcp" Description="Port to access WebUI." Type="Port" Display="always" Required="true" Mask="false">4444</Config>
+</Container>
