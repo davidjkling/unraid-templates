@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
 	<Name>degoog</Name>
-	<Repository>ghcr.io/fccview/degoog:latest</Repository>
-	<Registry>ghcr.io/fccview/degoog</Registry>
+	<Repository>ghcr.io/degoog-org/degoog:latest</Repository>
+	<Registry>ghcr.io/degoog-org/degoog</Registry>
 	<Network>bridge</Network>
 	<Shell>bash</Shell>
 	<Privileged>false</Privileged>
